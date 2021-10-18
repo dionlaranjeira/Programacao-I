@@ -52,8 +52,17 @@ public class Principal {
         danilo.conta.consultarSaldo();
         danilo.conta.consultarLimite();
 
-        danilo.conta.sacar(1000000);
+//        danilo.conta.sacar(1000000);
+//        danilo.conta.consultarSaldo();
+
+
+        danilo.conta.transferirPara(willian, 500);
+
+        System.out.println("Cliente:"+danilo.nome);
         danilo.conta.consultarSaldo();
+
+        System.out.println("Cliente:"+willian.nome);
+        willian.conta.consultarSaldo();
 
         System.out.println("-------------");
     }
